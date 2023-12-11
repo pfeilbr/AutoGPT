@@ -1,3 +1,19 @@
+
+```sh
+cd autogpts/autogpt
+
+# run via cli
+./autogpt.sh run --skip-news --debug --log-format debug --allow-downloads [--gpt4only|--gpt3only]
+
+./autogpt.sh run --continuous --skip-news --debug --log-format debug --allow-downloads --gpt4only --skip-reprompt --continuous-limit 10
+
+# run web ui (http://localhost:8080)
+./autogpt.sh serve --debug --log-format debug --allow-downloads [--gpt4only|--gpt3only]
+open http://localhost:8080
+```
+
+---
+
 # AutoGPT: build & use AI agents
 
 [![Discord Follow](https://dcbadge.vercel.app/api/server/autogpt?style=flat)](https://discord.gg/autogpt) &ensp;
